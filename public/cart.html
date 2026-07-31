@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | HappenPet</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo" style="text-decoration:none;">HappenPet</a>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#shop">Shop</a>
+        <a href="aboutus.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html" class="cart-btn-wrapper">
+            Cart <span id="cart-badge" class="cart-count-badge">0</span>
+        </a>
+    </nav>
+</header>
+
+<main class="cart-container">
+    <h1 style="margin-bottom: 2rem;">Your Playful Cart</h1>
+    <div id="cart-items-container">
+        <!-- Cart Items Injected by JS -->
+    </div>
+    <div class="cart-summary" id="cart-summary" style="display: none;">
+        <h3 style="margin-bottom: 1rem;">Total: ₹<span id="cart-total">0</span></h3>
+        <button class="btn btn-primary" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 HappenPet. Designed for joy, made with love.</p>
+</footer>
+
+<script src="../src/components/cart.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", renderCartPage);
+</script>
+</body>
+</html>

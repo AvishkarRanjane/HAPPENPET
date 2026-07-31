@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappenPet | Premium Pet Essentials</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo" style="text-decoration:none;">HappenPet</a>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="aboutus.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html" class="cart-btn-wrapper">
+            Cart <span id="cart-badge" class="cart-count-badge">0</span>
+        </a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Joyful Essentials for Happy Pets</h1>
+    <p>Discover premium toys, wholesome treats, and cozy beds designed to bring out the best in your furry, feathered, or scaly best friend. Because their happiness is your happiness.</p>
+    <a href="#shop" class="btn btn-primary">Shop Collection</a>
+</section>
+
+<section id="shop">
+    <h2 class="section-title">Playful Finds</h2>
+    <div class="product-grid" id="product-list">
+        <!-- Products injected by JS -->
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 HappenPet. Designed for joy, made with love.</p>
+</footer>
+
+<script src="../src/components/cart.js"></script>
+<script src="../src/components/ui.js"></script>
+</body>
+</html>

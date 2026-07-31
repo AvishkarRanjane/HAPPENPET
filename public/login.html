@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | HappenPet</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo" style="text-decoration:none;">HappenPet</a>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#shop">Shop</a>
+        <a href="aboutus.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html" class="cart-btn-wrapper">
+            Cart <span id="cart-badge" class="cart-count-badge">0</span>
+        </a>
+    </nav>
+</header>
+
+<main class="auth-container">
+    <h2 style="text-align: center; margin-bottom: 2rem; color: var(--text-dark);">Welcome Back!</h2>
+    <form onsubmit="event.preventDefault(); alert('Logged in successfully!'); window.location.href='index.html';">
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" required placeholder="paws@example.com">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" required placeholder="********">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Login</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 HappenPet. Designed for joy, made with love.</p>
+</footer>
+
+<script src="../src/components/cart.js"></script>
+</body>
+</html>
